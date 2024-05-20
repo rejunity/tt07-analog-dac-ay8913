@@ -183,12 +183,12 @@ N 1020 -450 1020 120 {
 lab=OUT}
 N 1090 -490 1090 120 {
 lab=OUT}
-N 130 40 130 180 {
-lab=VSS}
-N 40 180 130 180 {
-lab=VSS}
 N 110 120 1130 120 {
 lab=OUT}
+N 40 180 130 180 {
+lab=VSS}
+N 130 40 130 180 {
+lab=VSS}
 C {devices/ipin.sym} 40 -40 0 0 {name=p1 lab=AT12}
 C {devices/ipin.sym} 40 0 0 0 {name=p2 lab=AT13}
 C {devices/iopin.sym} 40 -580 0 1 {name=p3 lab=VDD}
