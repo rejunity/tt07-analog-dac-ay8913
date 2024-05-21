@@ -1,0 +1,120 @@
+magic
+tech sky130A
+timestamp 1716301499
+<< metal1 >>
+rect 0 0 100 100
+rect 0 -200 100 -100
+rect 0 -400 100 -300
+rect 0 -600 100 -500
+rect 0 -800 100 -700
+rect 0 -1000 100 -900
+rect 0 -1200 100 -1100
+rect 0 -1400 100 -1300
+rect 0 -1600 100 -1500
+rect 0 -1800 100 -1700
+rect 4450 -1750 4550 -1650
+rect 0 -2000 100 -1900
+rect 0 -2200 100 -2100
+rect 0 -2400 100 -2300
+rect 0 -2600 100 -2500
+rect 0 -2800 100 -2700
+rect 0 -3000 100 -2900
+rect 0 -3400 100 -3300
+use sky130_fd_pr__nfet_01v8_lvt_PXK84T  XM1
+timestamp 1716300029
+transform 0 -1 4005 1 0 -2852
+box -698 -155 698 155
+use sky130_fd_pr__nfet_01v8_lvt_DV472Z  XM2
+timestamp 1716300029
+transform 0 -1 3655 1 0 -2678
+box -522 -155 522 155
+use sky130_fd_pr__nfet_01v8_lvt_S4XANK  XM3
+timestamp 1716300029
+transform 0 -1 3305 1 0 -2552
+box -398 -155 398 155
+use sky130_fd_pr__nfet_01v8_lvt_XA7BLB  XM4
+timestamp 1716300029
+transform 0 1 905 -1 0 -202
+box -148 -705 148 705
+use sky130_fd_pr__nfet_01v8_lvt_PVCJZS  XM5
+timestamp 1716300029
+transform 0 -1 2955 1 0 -2440
+box -310 -155 310 155
+use sky130_fd_pr__nfet_01v8_lvt_V433WY  XM6
+timestamp 1716300029
+transform 0 -1 2605 1 0 -2402
+box -248 -155 248 155
+use sky130_fd_pr__nfet_01v8_lvt_NWFTZM  XM7
+timestamp 1716300029
+transform 0 -1 2255 1 0 -2346
+box -204 -155 204 155
+use sky130_fd_pr__nfet_01v8_lvt_UJ7Z4X  XM8
+timestamp 1716300029
+transform 0 1 1280 -1 0 -1502
+box -148 -180 148 180
+use sky130_fd_pr__nfet_01v8_lvt_C8TQ3N  XM9
+timestamp 1716300029
+transform 0 1 1355 -1 0 -902
+box -148 -255 148 255
+use sky130_fd_pr__nfet_01v8_lvt_XESRVR  XM10
+timestamp 1716300029
+transform 0 1 961 -1 0 -1202
+box -148 -211 148 211
+use sky130_fd_pr__nfet_01v8_lvt_N5KR3K  XM11
+timestamp 1716300029
+transform 1 0 1673 0 1 -1745
+box -173 -155 173 155
+use sky130_fd_pr__nfet_01v8_lvt_69TQ3K  XM12
+timestamp 1716300029
+transform 1 0 1648 0 1 -2145
+box -148 -155 148 155
+use sky130_fd_pr__nfet_01v8_lvt_P5KZ23  XM14
+timestamp 1716300029
+transform 0 1 2179 -1 0 -402
+box -148 -529 148 529
+use sky130_fd_pr__nfet_01v8_lvt_HQ7AL5  XM15
+timestamp 1716300029
+transform 0 1 3155 -1 0 -552
+box -148 -405 148 405
+use sky130_fd_pr__nfet_01v8_lvt_L27GYG  XM16
+timestamp 1716300029
+transform 0 1 3917 -1 0 -752
+box -148 -317 148 317
+<< labels >>
+flabel metal1 0 0 100 100 0 FreeSans 128 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -200 100 -100 0 FreeSans 128 0 0 0 AT0
+port 1 nsew
+flabel metal1 0 -400 100 -300 0 FreeSans 128 0 0 0 AT1
+port 2 nsew
+flabel metal1 0 -600 100 -500 0 FreeSans 128 0 0 0 AT2
+port 3 nsew
+flabel metal1 0 -800 100 -700 0 FreeSans 128 0 0 0 AT3
+port 4 nsew
+flabel metal1 0 -1000 100 -900 0 FreeSans 128 0 0 0 AT4
+port 5 nsew
+flabel metal1 0 -1200 100 -1100 0 FreeSans 128 0 0 0 AT5
+port 6 nsew
+flabel metal1 0 -1400 100 -1300 0 FreeSans 128 0 0 0 AT6
+port 7 nsew
+flabel metal1 0 -1600 100 -1500 0 FreeSans 128 0 0 0 AT7
+port 8 nsew
+flabel metal1 0 -1800 100 -1700 0 FreeSans 128 0 0 0 AT8
+port 9 nsew
+flabel metal1 0 -2000 100 -1900 0 FreeSans 128 0 0 0 AT9
+port 10 nsew
+flabel metal1 0 -2200 100 -2100 0 FreeSans 128 0 0 0 AT10
+port 11 nsew
+flabel metal1 0 -2400 100 -2300 0 FreeSans 128 0 0 0 AT11
+port 12 nsew
+flabel metal1 0 -2600 100 -2500 0 FreeSans 128 0 0 0 AT12
+port 13 nsew
+flabel metal1 0 -2800 100 -2700 0 FreeSans 128 0 0 0 AT13
+port 14 nsew
+flabel metal1 0 -3000 100 -2900 0 FreeSans 128 0 0 0 AT14
+port 15 nsew
+flabel metal1 0 -3400 100 -3300 0 FreeSans 128 0 0 0 VSS
+port 17 nsew
+flabel metal1 4450 -1750 4550 -1650 0 FreeSans 128 0 0 0 OUT
+port 16 nsew
+<< end >>
