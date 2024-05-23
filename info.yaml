@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "AY-8193 single channel DAC"      # Project title
-  author:       "ReJ aka Renaldas Zioma"      # Your name
+  title:        "AY-8913 single channel DAC"
+  author:       "ReJ aka Renaldas Zioma"
   discord:      "rzioma"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Logarithmic 4-bit DAC for AY-8193 sound generator"      # One line description of what your project does
+  description:  "Logarithmic 4-bit DAC for AY-8913 sound generator"
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
