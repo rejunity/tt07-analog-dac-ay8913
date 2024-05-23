@@ -34,10 +34,16 @@ Yeah, it is just bunch of transistors connected in parallel. The real magic is i
 
 ### Compare old and new
 
+![](docs/new_vs_old.png)
+
 ## Magic
 ![](docs/magic.png)
 ![](docs/xschem.png)
-
+<p align="center" width="100%">
+    <img width="32%" src="./docs/dac_16nfet_3d_metal1.png">
+    <img width="32%" src="./docs/dac_16nfet_3d_metal2.png">
+    <img width="32%" src="./docs/dac_16nfet_3d.png">
+</p>
 
 # What did I learn?
 
