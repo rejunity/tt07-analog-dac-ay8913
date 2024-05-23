@@ -19,14 +19,14 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="out"
-color=4
+node="out out_parax"
+color="4 7" 5
 dataset=-1
 unitx=1
 logx=0
 logy=0
 }
-B 2 450 1065 930 1315 {flags=graph
+B 2 1270 1145 1750 1395 {flags=graph
 y1=0
 y2=1.8
 ypos1=0
@@ -52,7 +52,7 @@ IN1
 IN2
 IN3"
 divx=5}
-B 2 1720 250 2520 650 {flags=graph
+B 2 2350 720 2700 990 {flags=graph
 y1=-4e-05
 y2=0.0022
 ypos1=0
@@ -74,6 +74,29 @@ logx=0
 logy=0
 color="8 9 7 8 10 10"
 node="i(vmeas) i(vmeaslvt) i(vmeasnorm) i(vmeaslvt1) i(vmeasnorm1)"}
+B 2 1730 250 2530 650 {flags=graph
+y1=-5.1e-05
+y2=0.0017
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=4e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="6 8"
+node="i(Vmeas)
+i(Vmeas_parax)"}
 N 700 450 730 450 {
 lab=vss}
 N 810 450 840 450 {
@@ -104,8 +127,8 @@ N 510 690 600 690 {
 lab=IN0}
 N 900 710 950 710 {
 lab=#net1}
-N 1010 710 1200 710 {
-lab=OUT}
+N 1010 710 1110 710 {
+lab=out}
 N 930 800 930 830 {
 lab=GND}
 N 1080 800 1080 820 {
@@ -115,7 +138,7 @@ lab=GND}
 N 930 710 930 740 {
 lab=#net1}
 N 1080 710 1080 740 {
-lab=OUT}
+lab=out}
 N 550 710 600 710 {
 lab=IN1}
 N 550 770 600 770 {
@@ -228,6 +251,52 @@ N 2390 1380 2480 1380 {
 lab=GND}
 N 2390 1370 2390 1380 {
 lab=GND}
+N 550 1130 600 1130 {
+lab=IN2}
+N 550 1150 600 1150 {
+lab=IN3}
+N 550 1190 600 1190 {
+lab=IN5}
+N 550 1210 600 1210 {
+lab=IN6}
+N 550 1230 600 1230 {
+lab=IN7}
+N 550 1270 600 1270 {
+lab=IN9}
+N 550 1290 600 1290 {
+lab=IN10}
+N 550 1310 600 1310 {
+lab=IN11}
+N 550 1330 600 1330 {
+lab=IN12}
+N 510 1090 600 1090 {
+lab=IN0}
+N 900 1110 950 1110 {
+lab=#net2}
+N 1010 1110 1110 1110 {
+lab=out_parax}
+N 930 1200 930 1230 {
+lab=GND}
+N 1080 1200 1080 1220 {
+lab=GND}
+N 930 1220 1080 1220 {
+lab=GND}
+N 930 1110 930 1140 {
+lab=#net2}
+N 1080 1110 1080 1140 {
+lab=out_parax}
+N 550 1110 600 1110 {
+lab=IN1}
+N 550 1170 600 1170 {
+lab=IN4}
+N 550 1350 600 1350 {
+lab=IN13}
+N 550 1370 600 1370 {
+lab=IN14}
+N 510 1250 600 1250 {
+lab=IN8}
+N 840 1040 840 1060 {
+lab=vss}
 C {devices/code.sym} 490 450 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -237,7 +306,7 @@ value="
 
 "
 spice_ignore=false}
-C {devices/launcher.sym} 1245 768.75 0 0 {name=h17 
+C {devices/launcher.sym} 1485 698.75 0 0 {name=h17 
 descr="Load waves" 
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
@@ -254,16 +323,16 @@ C {devices/lab_pin.sym} 810 450 0 0 {name=p2 sig_type=std_logic lab=vdd
 }
 C {devices/lab_pin.sym} 790 600 0 0 {name=p3 sig_type=std_logic lab=vdd
 }
-C {devices/lab_pin.sym} 840 640 0 0 {name=p4 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 840 640 0 1 {name=p4 sig_type=std_logic lab=vss
 }
 C {devices/ipin.sym} 550 710 0 0 {name=p19 lab=IN1}
-C {devices/opin.sym} 1200 710 0 0 {name=p20 lab=OUT}
+C {devices/opin.sym} 1110 710 0 0 {name=p20 lab=out}
 C {devices/res.sym} 980 710 1 0 {name=R1
 value=100
 footprint=1206
 device=resistor
 m=1}
-C {devices/simulator_commands_shown.sym} 945 910 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 1285 730 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -521,3 +590,48 @@ C {devices/lab_pin.sym} 2390 1250 0 0 {name=p39 sig_type=std_logic lab=vdd
 C {devices/lab_pin.sym} 2310 1340 0 0 {name=p40 sig_type=std_logic lab=vdd
 }
 C {devices/gnd.sym} 2390 1380 0 0 {name=l13 lab=GND}
+C {dac_16nfet.sym} 750 1230 0 0 {name=x2
+schematic=dac_16nfet_parax.sim
+spice_sym_def="tcleval(.include [file normalize ../mag/dac_16nfet.sim.spice])"
+tclcommand="textwindow [file normalize ../mag/dac_16nfet.sim.spice]"
+}
+C {devices/lab_pin.sym} 790 1000 0 0 {name=p41 sig_type=std_logic lab=vdd
+}
+C {devices/lab_pin.sym} 840 1040 0 1 {name=p42 sig_type=std_logic lab=vss
+}
+C {devices/ipin.sym} 550 1110 0 0 {name=p43 lab=IN1}
+C {devices/opin.sym} 1110 1110 0 0 {name=p44 lab=out_parax}
+C {devices/res.sym} 980 1110 1 0 {name=R2
+value=100
+footprint=1206
+device=resistor
+m=1}
+C {devices/ipin.sym} 550 1130 0 0 {name=p45 lab=IN2}
+C {devices/ipin.sym} 550 1150 0 0 {name=p46 lab=IN3}
+C {devices/gnd.sym} 930 1230 0 0 {name=l14 lab=GND}
+C {devices/ipin.sym} 510 1090 0 0 {name=p47 lab=IN0}
+C {devices/ammeter.sym} 790 1030 0 0 {name=Vmeas_parax savecurrent=true}
+C {devices/ipin.sym} 550 1190 0 0 {name=p48 lab=IN5
+}
+C {devices/ipin.sym} 550 1210 0 0 {name=p49 lab=IN6}
+C {devices/ipin.sym} 550 1230 0 0 {name=p50 lab=IN7}
+C {devices/ipin.sym} 550 1170 0 0 {name=p51 lab=IN4}
+C {devices/ipin.sym} 550 1270 0 0 {name=p52 lab=IN9
+}
+C {devices/ipin.sym} 550 1290 0 0 {name=p53 lab=IN10}
+C {devices/ipin.sym} 550 1310 0 0 {name=p54 lab=IN11}
+C {devices/ipin.sym} 510 1250 0 0 {name=p55 lab=IN8}
+C {devices/ipin.sym} 550 1350 0 0 {name=p56 lab=IN13
+}
+C {devices/ipin.sym} 550 1370 0 0 {name=p57 lab=IN14}
+C {devices/ipin.sym} 550 1330 0 0 {name=p58 lab=IN12}
+C {devices/res.sym} 1080 1170 0 0 {name=R3
+value=32
+footprint=1206
+device=resistor
+m=1}
+C {devices/capa.sym} 930 1170 0 0 {name=C2
+m=1
+value=5p
+footprint=1206
+device="ceramic capacitor"}
