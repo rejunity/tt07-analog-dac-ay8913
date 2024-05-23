@@ -21,6 +21,7 @@ This work was done as excercise for [Zero To ASIC Analog course](https://zerotoa
 
 
 ## The original DAC from the 80ies
+4-bit to 16 lines decoder on the left side. 16 current steering transistors of the different size form the DAC on the right. Output is in the top right corner.
 <p align="center" width="100%">
     <img width="50%" src="./docs/original_dac_from_8910.png">
 </p>
