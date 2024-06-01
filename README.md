@@ -4,7 +4,7 @@
 
 Recreation of the logarithmic 4-bit current steering DAC from AY-8910/AY-8912/AY-8913. Inspired and informed by silicon [reverse engineering](https://github.com/lvd2/ay-3-8910_reverse_engineered) of the orginal chip.
 
-This work was done as excercise for [Zero To ASIC Analog course](https://zerotoasiccourse.com/#asic-def) and will be part of the open-source silicon for [AY-8913](https://github.com/rejunity/tt05-psg-ay8913) and potentially [SN76489](https://github.com/rejunity/tt05-psg-sn76489) unless I manage BJT DAC for it. Also check open-source silicon effort for [Z80](https://github.com/rejunity/z80-open-silicon) CPU.
+This work was done as excercise for [Zero To ASIC Analog course](https://zerotoasiccourse.com/#asic-def) and will be part of the open-source silicon for [AY-8913](https://github.com/rejunity/tt07-psg-ay8913-with-analog-dac) and potentially [SN76489](https://github.com/rejunity/tt05-psg-sn76489) unless I manage BJT DAC for it. Also check open-source silicon effort for [Z80](https://github.com/rejunity/z80-open-silicon) CPU.
 
 ### Silicon
 
